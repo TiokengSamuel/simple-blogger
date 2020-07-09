@@ -17,7 +17,7 @@ class Post (models.Model):
     updated = models.DateTimeField(auto_now=true)
     status = models.CharField(max_length=10, choice=STATUS_CHOICES, default='draft')
 
-     class Meta:
+    class Meta:
          ordering = ('-publish',)
 
     def __str__(self):
