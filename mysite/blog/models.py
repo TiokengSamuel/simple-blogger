@@ -14,5 +14,5 @@ class Post (models.Model):
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add = True)
-     publish = models.DateTimeField(default=timezone.now)
+     updated = models.DateTimeField(auto_now=true)
 
