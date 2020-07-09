@@ -9,4 +9,6 @@ class Post (models.Model):
     )
 
     title = model.CharField(max_length=250)
-    slung = models.SlungField(max_length = 250)
+    slung = models.SlungField(max_length = 250, unique_for_date='publish')
+    
+
