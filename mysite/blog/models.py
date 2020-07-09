@@ -7,3 +7,6 @@ class Post (models.Model):
         ('draft', 'Draft')
         ('published', 'Published'),
     )
+
+    title = model.CharField(max_length=250)
+    slung = models.SlungField(max_length = 250)
