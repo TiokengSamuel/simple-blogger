@@ -10,5 +10,5 @@ class Post (models.Model):
 
     title = model.CharField(max_length=250)
     slung = models.SlungField(max_length = 250, unique_for_date='publish')
-    
+    author = models.ForeignKey(on_delete=models.CASCADE, related_name='blog_posts')
 
