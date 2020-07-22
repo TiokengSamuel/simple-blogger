@@ -4,3 +4,9 @@
 
 {% block content %}
 <h1>Bloggy Side</h1>
+{% for post in posts %}
+    <h2>
+      <a href="{{ post.get_absolute_url }}">
+          {{ post.title }}
+      </a>  
+    </h2>
