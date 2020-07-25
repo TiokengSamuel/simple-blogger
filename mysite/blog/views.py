@@ -7,7 +7,7 @@ def post_list(request):
 
 # Create your views here.
 def post_detail(request):
-    posts = get_object_or_404(Post, slug=post, status='published', publish_year=year, publish_month=month, publish_day)
+    posts = get_object_or_404(Post, slug=post, status='published', publish_year=year, publish_month=month, publish_day=day)
 
     return render (request, 'blog/post/detail.html', {'post': post})
     
